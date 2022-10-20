@@ -1,19 +1,21 @@
 import java.util.Scanner;
 
 public class Main {
-    int i;
-    int a;
-    boolean b;
-    private Main(){
-        i =5;
-        System.out.println("Constructor is called");
+    String language;
+
+
+
+    Main(String lang){
+        language = lang;
+        System.out.println(language + " Programming Language");
     }
+
+
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        Main ojc = new Main();
-        Main obj = new Main();
-        System.out.println("Vlue of i: " + ojc.i);
-        System.out.println("a = " + obj.a);
-        System.out.println("b = " + obj.b);
+        Main obj1 = new Main("Java");
+        Main obj2 = new Main("C");
+        Main obj3 = new Main("Python");
     }
 }
